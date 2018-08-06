@@ -2,19 +2,26 @@
 
 
 var reverse = function(x) {
-  
-  if(x>Math.pow(2,32)|| x<-Math.pow(2,32))return 0;
-    let tmp = x;
-    if(x<0){
-      x*=-1
+    if(x>)
+    var reverse = 0;
+    var neg = false;
+    if(x<1){
+      neg = true;
+      x = Math.abs(x);
+
+
     }
-    let strOfInt = x.toString();
-    let reversed = parseInt(strOfInt.split("").reverse().join(""));
-    if(tmp<0){
-      reversed*=-1;
+    while(x>0 ){
+      remainder = x %10;
+      reverse = (reverse*10)+remainder;
+      x = Math.floor(x/10);
     }
-    return reversed;
+  if(reverse>2147483647) return 0;
+  if(neg){
+    reverse = -Math.abs(reverse);
+  }
+  return reverse;
 };
 
 
-console.log(reverse(123));;
+reverse(120);;
