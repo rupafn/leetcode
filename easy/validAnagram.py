@@ -14,8 +14,8 @@ class Solution:
                 dictt2[i] =1
         if(dictt!=dictt2):
             return False
-        print(dictt)
-        print(dictt2)
+        # print(dictt)
+        # print(dictt2)
 
         return True
 
