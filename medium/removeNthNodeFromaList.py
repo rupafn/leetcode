@@ -39,11 +39,7 @@ class Solution:
 
 obj = Solution()
 
-#create linkedlist
-
 head = ListNode(1)
-# head.next = ListNode(2)
-# head.next.next = ListNode(3)
 i = 1
 while(i>1):
     newList =ListNode(i)
