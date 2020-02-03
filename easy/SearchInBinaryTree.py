@@ -9,7 +9,6 @@ class Solution:
     def searchBST(self, root, val):
         if(val == root.val):
             return root
-
         search = []
         while(root is not None):
             if(root):
