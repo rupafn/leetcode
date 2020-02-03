@@ -5,7 +5,7 @@ class Solution:
         while(len(nums)!=0):
             store.append((nums.pop(),nums.pop()))
         sum = 0
-        print(store)
+        # print(store)
         for pair in store:
             sum += min(pair)
         return sum
