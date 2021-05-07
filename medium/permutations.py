@@ -10,6 +10,7 @@ class Solution:
             options = s[0:i]+s[i+1:length]
             self.perm2(options,mem,choice,l)
         return mem
+
     def permute(self, nums):
 
         listt = []
@@ -24,6 +25,6 @@ class Solution:
 input = [1,2,3,4,5]
 # input = [0]
 # input = [1,2]
-input = [1,1,2]
+
 obj = Solution()
 print(obj.permute(input))
